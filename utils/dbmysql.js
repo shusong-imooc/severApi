@@ -1,5 +1,6 @@
 const mysql=require('mysql')
 const cfg=require('../conf')
+const md5=require('md5')
 const pool = mysql.createPool({
     connectionLimit : 10,  
     host: cfg.dbhost,  
